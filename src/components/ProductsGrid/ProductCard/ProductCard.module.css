@@ -1,0 +1,49 @@
+.productCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard {
+  img {
+    height: 42.7rem;
+    width: 100%;
+  }
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productInfo h2 {
+  font-size: 1.6rem;
+}
+
+.productInfo a {
+  font-size: 1.4rem;
+  font-weight: bold ;
+  color: var(--t-grey);
+}
+
+.productPrice {
+  display: flex;
+  gap: .5rem;
+}
+
+.productInfo p {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.productPrice p:first-child {
+  color: var(--muted-color);
+}
+.productPrice p:nth-child(2) {
+  color: var(--secondary-color-1);
+}
+
+
+
