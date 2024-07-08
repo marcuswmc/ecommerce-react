@@ -17,7 +17,8 @@ function App() {
       <CategoriesGrid />
       </Section>
       <Section>
-      <SectionTitle title={"Bestseller Products"}  subtitle={'Problems trying to resolve the conflict between '} tagline={'Featured Products'} />
+      <SectionTitle title={"Bestseller Products"}  subtitle={'Problems trying to resolve the conflict between '} tagline={'Featured Products'}/>
+      <ProductsGrid />
       <ProductsGrid />
       </Section>
     </>

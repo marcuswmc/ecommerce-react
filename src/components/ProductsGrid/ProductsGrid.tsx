@@ -12,7 +12,6 @@ function ProductsGrid() {
         category='Women'
         price='16.90'
         promotionPrice='6.90'
-        colors='Blue, red, orange'
         />
       </div>
       <div><ProductCard
@@ -22,7 +21,6 @@ function ProductsGrid() {
         category='Women'
         price='16.90'
         promotionPrice='6.90'
-        colors='Blue, red, orange'
         /></div>
       <div><ProductCard
         producName='Product Name'
@@ -31,7 +29,6 @@ function ProductsGrid() {
         category='Women'
         price='16.90'
         promotionPrice='6.90'
-        colors='Blue, red, orange'
         /></div>
       <div><ProductCard
         producName='Product Name'
@@ -40,7 +37,6 @@ function ProductsGrid() {
         category='Women'
         price='16.90'
         promotionPrice='6.90'
-        colors='Blue, red, orange'
         /></div>  
 
     </div>

@@ -7,8 +7,9 @@
 	grid-template-areas:
 		"one two three four";
 	width: 100%;
-	height: 500px;
+	min-height: 50rem;
 	gap: 20px;
+	margin-bottom: 8rem;
 }
 
 .productsGrid div {

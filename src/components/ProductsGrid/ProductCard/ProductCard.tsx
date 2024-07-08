@@ -2,9 +2,7 @@ import style from './ProductCard.module.css'
 
 function ProductCard(props){
   const { producName, link, image, category, price, promotionPrice} = props
-  const { productCard } = style
-  const { productInfo } = style
-  const { productPrice } = style
+  const { productCard, productInfo, productPrice, colorSelectorWrapper } = style
 
   return(
     <div className={productCard}>
@@ -12,13 +10,17 @@ function ProductCard(props){
       <div className={productInfo}>
       <h2>{producName}</h2>
       <a href={link}>{category}</a>
-      <section className={productPrice}>
+      <div className={productPrice}>
       <p>€{price}</p>
       {promotionPrice ? <p>€{promotionPrice}</p> : null}
-      </section>
-     
       </div>
-
+      <div className={colorSelectorWrapper}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
     </div>
   )
 }
