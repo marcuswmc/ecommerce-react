@@ -6,6 +6,7 @@ import Section from './components/Section/Section'
 import SectionTitle from './components/SectionTitle/SectionTitle'
 import CategoriesGrid from './components/CategoryGrid/CategoriesGrid'
 import ProductsGrid from './components/ProductsGrid/ProductsGrid'
+import PromotionSlider from './components/PromotionSlider/PromotionSlider'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <ProductsGrid />
       <ProductsGrid />
       </Section>
+      <PromotionSlider />
     </>
   )
 }

@@ -1,7 +1,6 @@
-.mainSlider {
+.promotionSlider {
   width: 100%;
-  height: calc(100vh - 7.8rem);
-  background-color: var(--t-primary);
+  min-height: 70.9rem;
   object-fit: cover;
   background-size: cover;
   background-position: center; 
