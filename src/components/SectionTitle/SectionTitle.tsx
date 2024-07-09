@@ -1,12 +1,12 @@
 import styles from './SectionTitle.module.css'
 
-interface props {
+interface Props {
   title: string,
   subtitle: string,
   tagline?: string
 }
 
-function SectionTile(props: props) {
+function SectionTile(props: Props) {
     //Destructuring das classes do module.css
     const { wrapper } = styles
 
@@ -15,7 +15,7 @@ function SectionTile(props: props) {
 
     return (
         <div className={wrapper}>
-            {tagline ? <h4>{tagline}</h4> : null}
+            {tagline && <h4>{tagline}</h4>}
             <h2>{title}</h2>
             <p>{subtitle}</p>
         </div>

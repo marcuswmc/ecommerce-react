@@ -7,6 +7,7 @@ import SectionTitle from './components/SectionTitle/SectionTitle'
 import CategoriesGrid from './components/CategoryGrid/CategoriesGrid'
 import ProductsGrid from './components/ProductsGrid/ProductsGrid'
 import PromotionSlider from './components/PromotionSlider/PromotionSlider'
+import PostsGrid from './components/PostGrid/PostGrid'
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
       <Section>
       <SectionTitle title={"Bestseller Products"}  subtitle={'Problems trying to resolve the conflict between '} tagline={'Featured Products'}/>
       <ProductsGrid />
-      <ProductsGrid />
       </Section>
       <PromotionSlider />
+      <Section>
+      <SectionTitle title={"Featured Posts"}  subtitle={'Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics  '} tagline={'Practice Advice'}/>  
+      <PostsGrid />
+      </Section>
     </>
   )
 }
