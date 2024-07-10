@@ -1,0 +1,17 @@
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 3rem;
+}
+
+.listStyle {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 1rem;
+	margin-bottom: 2rem;
+}
+
+.muted {
+	color: var(--t-grey);
+}

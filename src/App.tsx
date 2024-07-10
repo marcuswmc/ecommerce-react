@@ -5,7 +5,7 @@ import Section from './components/Section/Section'
 
 import SectionTitle from './components/SectionTitle/SectionTitle'
 import CategoriesGrid from './components/CategoryGrid/CategoriesGrid'
-import ProductsGrid from './components/ProductsGrid/ProductsGrid'
+import ProductsGrid from './components/ProductGrid/ProductGrid'
 import PromotionSlider from './components/PromotionSlider/PromotionSlider'
 import PostsGrid from './components/PostGrid/PostGrid'
 
