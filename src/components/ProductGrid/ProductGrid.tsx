@@ -1,6 +1,9 @@
 import { Icon } from '@iconify/react/dist/iconify.js'
 import ProductCard from './ProductCard/ProductCard'
+import ProductListCard from './ProductListCard/ProductListCard'
 import styles from './ProductGrid.module.css'
+import { useState } from 'react'
+
 
 
 const products = [
@@ -113,30 +116,47 @@ const products = [
 //  
 
 function ProductGrid() {
+    const [gridMode, setGridMode] = useState(true)
 
     return (
         <>
-            <div className={styles.listStyle}>
-                <Icon className={styles.muted} icon="mingcute:grid-fill" height="2.4rem" />
-                <Icon className={styles.muted} icon="mingcute:list-check-line" height="2.4rem" />
+            <div className={styles.listStyle} onClick={ () => setGridMode(!gridMode)}>
+                {gridMode 
+                    ? <Icon className={styles.muted} icon="mingcute:list-check-line" height="2.4rem" />
+                    : <Icon className={styles.muted} icon="mingcute:grid-fill" height="2.4rem" />
+                }
             </div>
-            <div className={styles.wrapper}>
+
+            <div className={gridMode ? styles.wrapper : styles.wrapper_list}>
                 {
                     products.map((product) => {
                         return (
-                            <ProductCard
+                            <>
+                            {gridMode 
+                            ? <ProductCard
                                 productName={product.name}
                                 image={product.productImg}
                                 description={product.description}
                                 oldPrice={product.oldPrice}
                                 currentPrice={product.currentPrice}
                                 variantColors={product.colors}
-                            />
+                                /> 
+                            : <ProductListCard
+                                productName={product.name}
+                                image={product.productImg}
+                                description={product.description}
+                                oldPrice={product.oldPrice}
+                                currentPrice={product.currentPrice}
+                                variantColors={product.colors}
+                                />
+                            }
+                            
+                            </>
                         )
                     })
                 }
+            </div> 
 
-            </div>
         </>
     )
 }
