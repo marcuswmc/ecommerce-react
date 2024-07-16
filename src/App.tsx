@@ -3,7 +3,7 @@ import MainSlider from './components/MainSlider/MainSlider'
 import NavBar from './components/NavBar/NavBar'
 import Section from './components/Section/Section'
 
-import SectionTitle from './components/SectionTitle/SectionTitle'
+import SectionTitle from './components/Section/SectionTitle/SectionTitle'
 import CategoriesGrid from './components/CategoryGrid/CategoriesGrid'
 import ProductGrid from './components/ProductGrid/ProductGrid'
 import PromotionSlider from './components/PromotionSlider/PromotionSlider'
